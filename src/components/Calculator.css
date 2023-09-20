@@ -1,0 +1,78 @@
+/* Calculator.css */
+/*set default values for all elements*/
+*{
+    margin:0px;
+    padding:0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-size: 110%;
+}
+ 
+#root{
+    text-align:center;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333; /* Dark background color */
+    color: white; /* Light text color */
+  }
+  
+  .calculator-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f7fbfc; /* Light accent color */
+  }
+  
+  .calculator-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #444; /* Dark background color for screens */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .input-screen,
+  .output-screen {
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #666; /* Dark button background color */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Light text color for buttons */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #888; /* Slightly lighter background on hover */
+  }
+  
+  /* Customize button colors for specific buttons (e.g., operators) if needed */
+  button.operator {
+    background-color: #ff5722; /* Custom color for operators */
+  }
+  
+  button.operator:hover {
+    background-color: #ff7043; /* Lighter color on hover for operators */
+  }
+
+
